@@ -11,7 +11,7 @@ const axios = require('axios');
 const app = express();
 const port = 3000;
 
-mongoose.connect('mongodb://localhost/google-proxy', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://softwerelogin:idiot@data.jvvxbi0.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
@@ -141,3 +141,35 @@ app.post('/search', isLoggedIn, async (req, res) => {
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//let Alfie._.thedev = true;
+//if(Alfie._.thedev){
+  //  console.log("Lets Code!")
+//} else {
+  //  console.log("No code?")
+//}
+
+
+
+
+
+
+
+
+
+
+
