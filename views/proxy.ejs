@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Proxy</title>
+</head>
+<body>
+    <h1>Welcome, <%= user.username %>!</h1>
+    <a href="/logout">Logout</a>
+
+    <h2>Search Google</h2>
+    <form action="/search" method="post">
+        <input type="text" name="query" placeholder="Search Google">
+        <button type="submit">Search</button>
+    </form>
+
+    <h2>Search Results</h2>
+    <% if (results) { %>
+        <ul>
+            <%= results %>
+        </ul>
+    <% } else { %>
+        <p>No results found.</p>
+    <% } %>
+</body>
+</html>

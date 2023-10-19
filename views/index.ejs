@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Proxy</title>
+</head>
+<body>
+    <h1>Welcome, <%= user ? user.username : 'Guest' %>!</h1>
+    <% if (user) { %>
+        <a href="/proxy">Proxy Page</a> |
+        <a href="/logout">Logout</a>
+    <% } else { %>
+        <a href="/login">Login</a> |
+        <a href="/signup">Signup</a>
+    <% } %>
+</body>
+</html>
